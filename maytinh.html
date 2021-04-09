@@ -7,7 +7,7 @@
 <body>
 <table>
     <tr>
-        <td colspan="4" id="abc"></td>
+        <td colspan="4"><input  id="abc"></input>
     </tr>
     <tr>
         <td><button type="button" onclick="abc.value += 1">1</button></td>
@@ -28,9 +28,9 @@
         <td><button type="button" onclick="abc.value += '*'">x</button></td>
     </tr>
     <tr>
-        <td><button type="button" onclick="abc.value += 'C'">C</button></td>
+        <td><button type="button" onclick="abc.value = ''">C</button></td>
         <td><button type="button" onclick="abc.value += 0">0</button></td>
-        <td><button type="button" onclick="abc.value += '='">=</button></td>
+        <td><button type="button" onclick="abc.value = eval(abc.value)">=</button></td>
         <td><button type="button" onclick="abc.value += '/'">/</button></td>
     </tr>
 </table>
