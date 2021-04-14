@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img
+        {
+            border: solid black;
+        }
+    </style>
+</head>
+<body>
+<img id="pic1" src="catx1.jpg" height="100" width="600" onclick="Click1()"/><br>
+<img id="pic2" src="anh1.jpg" height="100" width="600" onclick="Click2()"/><br>
+<img id="pic3" src="dong1.jpg" height="100" width="600" onclick="Click3()"/><br>
+<img id="pic4" src="xyz1.jpg" height="100" width="600" onclick="Click4()"/><br>
+<img id="pic5" src="bcd1.jpg" height="100" width="600" onclick="Click5()"/>
+<script>
+    let ab = 1;
+    function Click1(){
+        if (ab>=3) {
+            ab = 1;
+        }
+        else {
+            ab++;
+        }
+        document.getElementById('pic1').src ='catx'+ ab +'.jpg'
+    }
+    function Click2(){
+        if (ab>=3) {
+            ab = 1;
+        }
+        else {
+            ab++;
+        }
+        document.getElementById('pic2').src = 'anh'+ ab +'.jpg'
+    }
+    function Click3(){
+        if (ab>=3) {
+            ab = 1;
+        }
+        else {
+            ab++;
+        }
+        document.getElementById('pic3').src = 'dong'+ ab +'.jpg'
+    }
+    function Click4(){
+        if (ab>=3) {
+            ab = 1;
+        }
+        else {
+            ab++;
+        }
+        document.getElementById('pic4').src = 'xyz'+ ab +'.jpg'
+    }
+    function Click5(){
+        if (ab>=3) {
+            ab = 1;
+        }
+        else {
+            ab++;
+        }
+        document.getElementById('pic5').src = 'bcd'+ ab +'.jpg'
+    }
+</script>
+</body>
+</html>
